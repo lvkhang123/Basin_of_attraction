@@ -59,25 +59,7 @@ plt.ylabel('y', fontsize=25)  # Adjust the fontsize as needed
 plt.title('Basin of attraction of a 10 x 10 resolution', fontsize=30)  # Adjust the fontsize as needed
 
 plt.legend(fontsize = 25) # Adjust the fontsize as needed 
-'''
-# Set the x and y limits
-ax.set_xlim(x_range)
-ax.set_ylim(y_range)
 
-# Draw x and y axes lines
-ax.axhline(0, color='black', linewidth=0.5)
-ax.axvline(0, color='black', linewidth=0.5)
-
-# Set aspect ratio to be equal to avoid distortion
-ax.set_aspect('equal', 'box')
-
-# Label the axes
-ax.set_xlabel('X-axis')
-ax.set_ylabel('Y-axis')
-
-# Add a grid
-ax.grid(True, which='both')
-'''
 # Plot the center points of each segment
 for i in range(num_segments_x):
     for j in range(num_segments_y):
@@ -123,24 +105,4 @@ for i in range(num_segments_x):
     
             x = x1
             y = y1 
-    
 
-            
-# Plot
-
-#fig, (ax1) = plt.subplots(1, 1, figsize=(16, 9)) 
-#ax1.plot(X,Y)
-
-
-'''
-Notes:
-    
-    * Using while loops to fix the plotting 
-    * After certain iteration, we need to stop the loop. 
-    * Change the name of the x and y initial conditions, since we encounter an issue that 
-        the point we are plotting is not the initial points but the equilibrium point. 
-    * Should move the for loop into the big loop. In other words, move the for loop into a bigger loop
-    
-'''
-
-# The next thing I will do is to figure out the while loop
